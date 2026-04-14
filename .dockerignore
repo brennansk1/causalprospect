@@ -1,0 +1,17 @@
+.venv/
+.git/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+node_modules/
+data/raw/
+data/cache/
+dashboard/node_modules/
+dashboard/dist/
+screenshots/
+.idea/
+.vscode/
+.DS_Store
+*.log

@@ -1,0 +1,21 @@
+name: gat_causal
+hidden_channels: 128
+heads: 4
+dropout: 0.3
+layers: 3
+epochs: 200
+learning_rate: 1.0e-3
+weight_decay: 1.0e-5
+device: auto  # mps | cuda | cpu
+
+causal:
+  pc:
+    alpha: 0.05
+    indep_test: fisherz
+    stable: true
+  sgc:
+    alpha: 0.05
+
+conformal:
+  alpha: 0.1      # 90% coverage
+  bandwidth: adaptive

@@ -1,0 +1,23 @@
+defaults:
+  - region: arizona_copper
+  - data: az_copper_belt
+  - model: gat_causal
+  - _self_
+
+paths:
+  root: ${oc.env:CP_ROOT,${hydra:runtime.cwd}}
+  data_raw: ${paths.root}/data/raw
+  data_processed: ${paths.root}/data/processed
+  cache: ${paths.root}/data/cache
+  models: ${paths.root}/models/trained
+  api_cache_ttl_hours: 168  # one week
+
+grid:
+  resolution: 7  # H3 res 7 ≈ 5.16 km² per cell
+  crs: EPSG:32612  # UTM Zone 12N (Arizona)
+
+seed: 42
+
+logging:
+  level: INFO
+  format: json

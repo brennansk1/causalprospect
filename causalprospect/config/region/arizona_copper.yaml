@@ -1,0 +1,9 @@
+# Arizona Laramide porphyry copper province
+name: arizona_copper_belt
+bbox:
+  min_lon: -113.0
+  min_lat: 31.0
+  max_lon: -109.0
+  max_lat: 34.5
+state_fips: "04"
+state_abbr: AZ

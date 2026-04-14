@@ -1,0 +1,23 @@
+# Data source toggles — all API-first, cache small clips only.
+sources:
+  mrds:
+    enabled: true
+  usmin:
+    enabled: true
+  ngdb_geochem:
+    enabled: true
+  sgmc:
+    enabled: true
+  macrostrat:
+    enabled: true
+  azgs:
+    enabled: true
+  earthmri_geophysics:
+    enabled: true
+  planetary_computer:
+    sentinel2: true
+    srtm: true
+    aster: true
+  foundation_models:
+    satclip: false   # heavy — enable once weights cached locally
+    prithvi: false

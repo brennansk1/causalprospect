@@ -1,0 +1,23 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: causalprospect:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - CP_CACHE=/app/data/cache
+    restart: unless-stopped
+
+  dashboard:
+    build:
+      context: ./dashboard
+    image: causalprospect-dashboard:latest
+    ports:
+      - "5173:80"
+    depends_on:
+      - api
+    restart: unless-stopped

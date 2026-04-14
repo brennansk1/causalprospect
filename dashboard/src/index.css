@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+
+  --bg-app: #f3f3f3;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f7f9fb;
+  --bg-hover: #f3f5f8;
+  --bg-selected: #eef4fb;
+
+  --border: #e5e5e5;
+  --border-strong: #c9c9c9;
+  --border-focus: #1b96ff;
+
+  --text-primary: #181818;
+  --text-secondary: #444444;
+  --text-muted: #706e6b;
+
+  --brand: #0176d3;
+  --brand-hover: #014486;
+
+  --data-copper: #d45d2a;
+  --data-teal: #2a9d8f;
+  --data-gold: #e0a030;
+  --data-danger: #ea001e;
+  --data-success: #2e844a;
+
+  --shadow-e1: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-e2: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-e3: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--text-primary);
+  background: var(--bg-app);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+[role='tab']:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(27, 150, 255, 0.35);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cfd3d9;
+  border-radius: 5px;
+  border: 2px solid var(--bg-app);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a9adb4;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+}
+
+.display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #eef0f3 0%, #f7f8fa 50%, #eef0f3 100%);
+  background-size: 200px 100%;
+  animation: shimmer 1.4s linear infinite;
+}
