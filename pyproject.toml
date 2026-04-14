@@ -2,7 +2,7 @@
 name = "causalprospect"
 version = "0.1.0"
 description = "Causal discovery-enhanced critical mineral prospectivity with conformal prediction"
-authors = [{ name = "Brennan Skanski" }]
+authors = [{ name = "Brennan Kelley" }]
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }

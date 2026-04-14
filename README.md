@@ -150,4 +150,4 @@ MIT. Raw data is subject to each provider's license (USGS / Macrostrat / AZGS / 
 
 ## Author
 
-**Brennan Skanski** · April 2026 · [LinkedIn](https://www.linkedin.com/in/brennan-skanski) · Salt Lake City, Utah
+**Brennan Kelley** · April 2026 · Salt Lake City, Utah

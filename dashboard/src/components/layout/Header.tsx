@@ -133,7 +133,7 @@ function StudyAreaBadge() {
 function AuthorBadge() {
   return (
     <div style={{ fontSize: 11, color: 'var(--text-muted)', textAlign: 'right', lineHeight: 1.35 }}>
-      <div style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>Brennan Skanski</div>
+      <div style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>Brennan Kelley</div>
       <div>v0.1 · April 2026</div>
     </div>
   )
